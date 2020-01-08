@@ -1,0 +1,22 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not job any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.authenticated-message-thread.list.label.authenticated = User name
+
+authenticated.authenticated-message-thread.form.label.authenticated = User name:
+authenticated.authenticated-message-thread.form.label.messageThreadName = Message thread name:
+
+authenticated.authenticated-message-thread.button.create = Add
+authenticated.authenticated-message-thread.form.button.delete = Delete
+authenticated.authenticated-message-thread.button.return = Return
+
+authenticated.authenticated-message-thread.error.authenticated = The user does not exist
+authenticated.authenticated-message-thread.error.authenticatedMessageThread = The user is already in the message thread
+authenticated.authenticated-message-thread.error.authenticated.delete = The creator can not be deleted from the message thread

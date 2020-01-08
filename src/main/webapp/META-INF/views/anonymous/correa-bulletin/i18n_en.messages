@@ -1,0 +1,8 @@
+anonymous.correa-bulletin.list.label.moment = Moment
+anonymous.correa-bulletin.list.label.author = Author
+anonymous.correa-bulletin.list.label.text = Text
+
+anonymous.correa-bulletin.form.label.author = Author:
+anonymous.correa-bulletin.form.label.text = Text:
+anonymous.correa-bulletin.form.button.create = Post
+anonymous.correa-bulletin.form.button.return = Return  

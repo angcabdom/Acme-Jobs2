@@ -1,0 +1,11 @@
+administrator.auditor.form.label.firm = Firm
+administrator.auditor.form.label.responsabilityStatement = Responsability Statement
+administrator.auditor.form.label.accepted = Accepted
+	
+administrator.auditor.form.button.return = Return
+administrator.auditor.form.button.update = Update
+
+administrator.auditor.list.label.firm = Firm
+administrator.auditor.list.label.accepted = Accepted
+
+administrator.auditor.error.accepted = The accepted must be: true or false

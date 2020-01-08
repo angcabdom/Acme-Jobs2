@@ -1,0 +1,8 @@
+anonymous.granja-bulletin.list.label.moment = Moment
+anonymous.granja-bulletin.list.label.author = Author
+anonymous.granja-bulletin.list.label.text = Text
+
+anonymous.granja-bulletin.form.label.author = Author:
+anonymous.granja-bulletin.form.label.text = Text:
+anonymous.granja-bulletin.form.button.create = Post
+anonymous.granja-bulletin.form.button.return = Return 

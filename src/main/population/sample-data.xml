@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- - sample-data.xml - - Copyright (c) 2019 Rafael Corchuelo. - - In keeping with the traditional purpose of furthering education and 
+	research, it is - the policy of the copyright owner to permit non-commercial use and redistribution of - this software. It has been tested 
+	carefully, but it is not guaranteed for any particular - purposes. The copyright owner does not offer any warranties or representations, 
+	nor do - they accept any liabilities with respect to them. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+
+	<!-- /////////////////////// SHOUTS /////////////////////////////// -->
+	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="author" value="John Doe" />
+		<property name="text" value="I'm happy!" />
+		<property name="moment" value="2019/09/09 10:00" />
+	</bean>
+
+	<bean id="shout02" class="acme.entities.shouts.Shout">
+		<property name="author" value="Jane Doe" />
+		<property name="text" value="I'm the master of my room!" />
+		<property name="moment" value="2019/08/09 15:55" />
+	</bean>
+
+	<bean id="shout03" class="acme.entities.shouts.Shout">
+		<property name="author" value="Foo Bar" />
+		<property name="text" value="I'm 20..." />
+		<property name="moment" value="2019/09/07 00:00" />
+	</bean>
+
+	<bean id="shout04" class="acme.entities.shouts.Shout">
+		<property name="author" value="Peter McCain" />
+		<property name="text" value="Where am I?" />
+		<property name="moment" value="2019/04/05 17:25" />
+	</bean>
+
+	<bean id="shout05" class="acme.entities.shouts.Shout">
+		<property name="author" value="Tony Montana" />
+		<property name="text" value="Who put this thing together?" />
+		<property name="moment" value="2019/07/26 20:19" />
+	</bean>
+
+	<bean id="shout06" class="acme.entities.shouts.Shout">
+		<property name="author" value="Freddy Krueger" />
+		<property name="text" value="You can check in, but you can't check out" />
+		<property name="moment" value="2019/02/17 05:14" />
+	</bean>
+
+	<bean id="shout07" class="acme.entities.shouts.Shout">
+		<property name="author" value="Julián Pérez" />
+		<property name="text" value="¿Qué es esto?" />
+		<property name="moment" value="2019/09/09 03:14" />
+	</bean>
+
+	<bean id="shout08" class="acme.entities.shouts.Shout">
+		<property name="author" value="Juan Carlos Serrano" />
+		<property name="text" value="Mi primer Shout" />
+		<property name="moment" value="2019/10/09 11:00" />
+	</bean>
+
+
+	<!-- /////////////////////// CABALLERO BULLETINS ////////////////// -->
+	<bean id="caballeroBulletin01" class="acme.entities.caballeroBulletins.CaballeroBulletin">
+		<property name="author" value="Michael Myers" />
+		<property name="text" value="..." />
+		<property name="moment" value="2018/10/31 23:59" />
+	</bean>
+
+	<bean id="caballeroBulletin02" class="acme.entities.caballeroBulletins.CaballeroBulletin">
+		<property name="author" value="Jimmy" />
+		<property name="text" value="I like that!" />
+		<property name="moment" value="2019/04/09 18:35" />
+	</bean>
+
+
+	<!-- /////////////////// CORREA BULLETINS //////////////////////////// -->
+	<bean id="correaBulletin01" class="acme.entities.correaBulletins.CorreaBulletin">
+		<property name="author" value="J.J" />
+		<property name="text" value="New shout" />
+		<property name="moment" value="2019/09/09 23:15" />
+	</bean>
+
+	<bean id="correaBulletin02" class="acme.entities.correaBulletins.CorreaBulletin">
+		<property name="author" value="R.L" />
+		<property name="text" value="Fashion victim" />
+		<property name="moment" value="2019/09/10 23:15" />
+	</bean>
+
+
+	<!-- /////////////////// GRANJA BULLETINS //////////////////////////// -->
+	<bean id="granjaBulletin01" class="acme.entities.granjaBulletins.GranjaBulletin">
+		<property name="author" value="Monolo 72" />
+		<property name="text" value="Buenas!!" />
+		<property name="moment" value="2019/10/09 10:00" />
+	</bean>
+
+	<bean id="granjaBulletin02" class="acme.entities.granjaBulletins.GranjaBulletin">
+		<property name="author" value="Peter Parker" />
+		<property name="text" value="I'm Spiderman" />
+		<property name="moment" value="2019/09/09 12:15" />
+	</bean>
+
+
+	<!-- /////////////////// MORANTE BULLETINS ///////////////////////// -->
+	<bean id="moranteBulletin01" class="acme.entities.moranteBulletins.MoranteBulletin">
+		<property name="author" value="Monolo 72" />
+		<property name="text" value="Buenas!!" />
+		<property name="moment" value="2019/10/09 10:00" />
+	</bean>
+
+	<bean id="moranteBulletin02" class="acme.entities.moranteBulletins.MoranteBulletin">
+		<property name="author" value="Tony Stark" />
+		<property name="text" value="Friday, what time is it?" />
+		<property name="moment" value="2019/09/09 12:15" />
+	</bean>
+
+
+	<!-- /////////////////// ANNOUNCEMENTS ///////////////////////// -->
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement Sample 1" />
+		<property name="text" value="I'm happy!" />
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="moment" value="2019/09/09 10:00" />
+	</bean>
+
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement Sample 2" />
+		<property name="text" value="I'm the master of my room!" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="moment" value="2019/08/09 15:55" />
+	</bean>
+
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement Sample 3" />
+		<property name="text" value="I'm 20..." />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="moment" value="2019/09/07 00:00" />
+	</bean>
+
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Tony Stark" />
+		<property name="moment" value="2019/09/09 12:15" />
+		<property name="moreInfo" value="https://github.com/angcabdom/Acme-Jobs" />
+		<property name="text" value="Friday, what time is it?" />
+	</bean>
+
+	<bean id="announcement05" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Tony Stark 2" />
+		<property name="moment" value="2019/09/09 10:15" />
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="text" value="Friday, what time hfghf is it?" />
+	</bean>
+
+
+	<!-- /////////////////// OFFERS ///////////////////////// -->
+	<bean id="offer01" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 1" />
+		<property name="ticker" value="OACBA-00001" />
+		<property name="moment" value="2019/09/09 12:15" />
+		<property name="deadline" value="2019/12/09 10:00" />
+		<property name="text" value="Description sample" />
+		<property name="moneyMin" value="€ 700" />
+		<property name="moneyMax" value="€ 1000" />
+	</bean>
+
+	<bean id="offer02" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 2" />
+		<property name="ticker" value="OCAAA-01002" />
+		<property name="moment" value="2019/10/09 10:00" />
+		<property name="deadline" value="2019/12/09 12:15" />
+		<property name="text" value="This is a sample of the description of an offer" />
+		<property name="moneyMin" value="€ 750" />
+		<property name="moneyMax" value="€ 1000" />
+	</bean>
+
+
+	<!-- /////////////////// COMPANY RECORDS ///////////////////////// -->
+	<bean id="CompanyRecord01" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Google inc" />
+		<property name="sector" value="Tecnológico" />
+		<property name="ceo" value="Sundar Pichai" />
+		<property name="activities" value="Desarrollo y mantenimiento de aplicaciones web" />
+		<property name="webSite" value="https://www.google.com" />
+		<property name="phone" value="+183 (1436) 1937403629" />
+		<property name="email" value="google@google.com" />
+		<property name="incorporated" value="True" />
+		<property name="stars" value="5" />
+	</bean>
+
+	<bean id="CompanyRecord02" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Intel inc" />
+		<property name="sector" value="Tecnológico" />
+		<property name="ceo" value="Bob Swan" />
+		<property name="activities" value="Desarrollo y producción de hardware" />
+		<property name="webSite" value="https://www.intel.es/content/www/es/es/homepage.html" />
+		<property name="phone" value="036295" />
+		<property name="email" value="intel@intel.com" />
+		<property name="incorporated" value="True" />
+		<property name="stars" value="4" />
+	</bean>
+
+
+	<!-- /////////////////// CHALLENGES ///////////////////////// -->
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 1" />
+		<property name="deadline" value="2019/12/09 10:00" />
+		<property name="description" value="Description sample" />
+		<property name="goalGold" value="Terminar en una semana" />
+		<property name="rewardGold" value="Algo muy bonito" />
+		<property name="goalSilver" value="Terminar en dos semana" />
+		<property name="rewardSilver" value="Algo bonito" />
+		<property name="goalBronze" value="Terminar justo en el plazo" />
+		<property name="rewardBronze" value="Algo más o menos bonito" />
+	</bean>
+
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge reloaded" />
+		<property name="deadline" value="2019/12/09 10:00" />
+		<property name="description" value="Description sample with originality" />
+		<property name="goalGold" value="Terminar en una semana" />
+		<property name="rewardGold" value="Algo muy bonito" />
+		<property name="goalSilver" value="Terminar en dos semana" />
+		<property name="rewardSilver" value="Algo bonito" />
+		<property name="goalBronze" value="Terminar justo en el plazo" />
+		<property name="rewardBronze" value="Algo más o menos bonito" />
+	</bean>
+
+
+	<!-- /////////////////// INVESTOR RECORDS ///////////////////////// -->
+	<bean id="investorRecord01" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="Rafa" />
+		<property name="sector" value="Banking" />
+		<property name="statement" value="The investing statement 01" />
+		<property name="stars" value="3" />
+	</bean>
+
+	<bean id="investorRecord02" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="Carmen" />
+		<property name="sector" value="Technology" />
+		<property name="statement" value="The investing statement 02" />
+		<property name="stars" value="4" />
+	</bean>
+
+	<bean id="investorRecord03" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="John" />
+		<property name="sector" value="Tourism" />
+		<property name="statement" value="The investing statement 03" />
+		<property name="stars" value="1" />
+	</bean>
+
+
+	<!-- /////////////////// REQUESTS ///////////////////////// -->
+	<bean id="request01" class="acme.entities.requests_.Request_">
+		<property name="title" value="Trabajo de fontanero" />
+		<property name="moment" value="2019/09/09 10:15" />
+		<property name="dateLimit" value="2019/11/28 10:30" />
+		<property name="text" value="lfdksjghd" />
+		<property name="money" value="€ 1000" />
+		<property name="ticker" value="RXXXX-99109" />
+	</bean>
+
+	<bean id="request02" class="acme.entities.requests_.Request_">
+		<property name="title" value="Trabajo de fontanero2" />
+		<property name="moment" value="2019/09/09 10:14" />
+		<property name="dateLimit" value="2019/11/28 10:36" />
+		<property name="text" value="lfdksjghdfdgf" />
+		<property name="money" value="€ 750" />
+		<property name="ticker" value="RXXXX-99119" />
+	</bean>
+
+
+	<!-- /////////////////// CONFIGURATION ///////////////////////// -->
+	<bean id="configuration01" class="acme.entities.configuration.Configuration">
+		<property name="title" value="Configuration" />
+		<property name="spamThreshold" value="0.2" />
+		<property name="spamWords">
+			<list>
+				<value>sex</value>
+				<value>hard core</value>
+				<value>viagra</value>
+				<value>nigeria</value>
+				<value>you´ve won</value>
+				<value>million dollar</value>
+				<value>sexo</value>
+				<value>núcleo duro</value>
+				<value>has ganado</value>
+				<value>millón de dólares</value>
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- /////////////////// EMPLOYERS ///////////////////////// -->
+	<bean name="employer1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="employer1" />
+		<property name="password" value="employer1" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Employer" />
+				<property name="surname" value="One" />
+				<property name="email" value="employer1@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="employer1Employer" />
+				<ref bean="employer1Authenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="employer1Employer" class="acme.entities.roles.Employer">
+		<property name="company" value="Employer 1,Inc." />
+		<property name="sector" value="Sector 1" />
+		<property name="userAccount" ref="employer1UserAccount" />
+	</bean>
+
+	<bean name="employer1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="employer1UserAccount" />
+	</bean>
+
+	<bean name="employer2UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="employer2" />
+		<property name="password" value="employer2" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Employer" />
+				<property name="surname" value="Two" />
+				<property name="email" value="employer2@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="employer2Employer" />
+				<ref bean="employer2Authenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="employer2Employer" class="acme.entities.roles.Employer">
+		<property name="company" value="Employer 2,Inc." />
+		<property name="sector" value="Sector 2" />
+		<property name="userAccount" ref="employer2UserAccount" />
+	</bean>
+
+	<bean name="employer2Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="employer2UserAccount" />
+	</bean>
+
+
+	<!-- /////////////////// WORKERS ///////////////////////// -->
+	<bean name="worker1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="worker1" />
+		<property name="password" value="worker1" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Worker" />
+				<property name="surname" value="One" />
+				<property name="email" value="worker1@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="worker1Worker" />
+				<ref bean="worker1Authenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="worker1Worker" class="acme.entities.roles.Worker">
+		<property name="qualifications" value="Grado de Biologia" />
+		<property name="skills" value="Ad 452" />
+		<property name="userAccount" ref="worker1UserAccount" />
+	</bean>
+
+	<bean name="worker1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="worker1UserAccount" />
+	</bean>
+
+<bean name="worker2UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="worker2" />
+		<property name="password" value="worker2" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Worker" />
+				<property name="surname" value="Two" />
+				<property name="email" value="worker2@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="worker2Worker" />
+				<ref bean="worker2Authenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="worker2Worker" class="acme.entities.roles.Worker">
+		<property name="qualifications" value="Grado de Física" />
+		<property name="skills" value="Ad 452" />
+		<property name="userAccount" ref="worker2UserAccount" />
+	</bean>
+
+	<bean name="worker2Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="worker2UserAccount" />
+	</bean>
+
+	<!-- /////////////////// JOBS ///////////////////////// -->
+	<bean name="job1" class="acme.entities.jobs.Job">
+		<property name="reference" value="EMP1-JOB1" />
+		<property name="title" value="Title 1 " />
+		<property name="deadline" value="2021/11/28 10:30" />
+		<property name="salary" value="€ 15,000.00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="finalMode" value="true" />
+		<property name="employer" ref="employer1Employer" />
+		<property name= "descriptor" value="descriptor01"/>
+	</bean>
+
+	<bean name="job2" class="acme.entities.jobs.Job">
+		<property name="reference" value="EMP1-JOB2" />
+		<property name="title" value="Title 2 " />
+		<property name="deadline" value="2022/11/28 10:30" />
+		<property name="salary" value="€ 25,000.00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="finalMode" value="true" />
+		<property name="employer" ref="employer1Employer" />
+		<property name= "descriptor" value="descriptor02"/>
+	</bean>
+
+	<bean name="job3" class="acme.entities.jobs.Job">
+		<property name="reference" value="EMP1-JOB3" />
+		<property name="title" value="Title 3 " />
+		<property name="deadline" value="2019/11/28 10:30" />
+		<property name="salary" value="€ 22,000.00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="finalMode" value="true" />
+		<property name="employer" ref="employer1Employer" />
+    	<property name= "descriptor" value="descriptor03"/>
+	</bean>
+
+	<bean name="job4" class="acme.entities.jobs.Job">
+		<property name="reference" value="EMP1-JOB4" />
+		<property name="title" value="Title 4 " />
+		<property name="deadline" value="2021/10/04 11:30" />
+		<property name="salary" value="€ 22,000.00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="finalMode" value="false" />
+		<property name="employer" ref="employer1Employer" />
+		<property name= "descriptor" value="descriptor04"/>
+	</bean>
+
+	<bean name="job5" class="acme.entities.jobs.Job">
+		<property name="reference" value="EMP2-JOB5" />
+		<property name="title" value="Title 5 " />
+		<property name="deadline" value="2023/01/01 12:00" />
+		<property name="salary" value="€ 22,000.00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="finalMode" value="true" />
+		<property name="employer" ref="employer2Employer" />
+		<property name= "descriptor" value="descriptor05"/>
+	</bean>
+
+	<!-- /////////////////// APLICATIONS ///////////////////////// -->
+	<bean name="application1" class="acme.entities.applications.Application">
+		<property name="creationMoment" value="2021/09/28 11:30" />
+		<property name="reference" value="EMP1-JOB1:AP01" />
+		<property name="deadline" value="2022/11/28 10:30" />
+		<property name="status" value="pending" />
+		<property name="justification" value="" />
+		<property name="statement" value="statement example" />
+		<property name="skills" value="skills example" />
+		<property name="qualifications" value="qualifications example" />
+		<property name="job" ref="job1" />
+		<property name="worker" ref="worker1Worker" />
+	</bean>
+
+	<bean name="application2" class="acme.entities.applications.Application">
+		<property name="creationMoment" value="2022/03/14 11:10" />
+		<property name="reference" value="EMP1-JOB2:AP02" />
+		<property name="deadline" value="2022/05/05 22:30" />
+		<property name="status" value="accepted" />
+		<property name="justification" value="" />
+		<property name="statement" value="statement example" />
+		<property name="skills" value="skills example" />
+		<property name="qualifications" value="qualifications example" />
+		<property name="job" ref="job2" />
+		<property name="worker" ref="worker1Worker" />
+	</bean>
+	
+		<bean name="application3" class="acme.entities.applications.Application">
+		<property name="creationMoment" value="2022/11/20 09:30" />
+		<property name="reference" value="EMP1-JOB2:AP03" />
+		<property name="deadline" value="2019/05/05 22:30" />
+		<property name="status" value="rejected" />
+		<property name="justification" value="No cumple el perfil buscado" />
+		<property name="statement" value="statement example" />
+		<property name="skills" value="skills example" />
+		<property name="qualifications" value="qualifications example" />
+		<property name="job" ref="job3" />
+		<property name="worker" ref="worker2Worker" />
+	</bean>
+	
+	<bean name="application4" class="acme.entities.applications.Application">
+		<property name="creationMoment" value="2022/11/20 09:35" />
+		<property name="reference" value="EMP1-JOB2:AP04" />
+		<property name="deadline" value="2019/05/05 22:35" />
+		<property name="status" value="rejected" />
+		<property name="justification" value="No cumple el perfil buscado" />
+		<property name="statement" value="statement example" />
+		<property name="skills" value="skills example" />
+		<property name="qualifications" value="qualifications example" />
+		<property name="job" ref="job1" />
+		<property name="worker" ref="worker2Worker" />
+	</bean>
+
+
+	<!-- /////////////////// MANDATORY DUTIES ///////////////////////// -->
+
+	<bean id="manDuty01" class="acme.entities.mandatoryDuties.MandatoryDuty">
+		<property name="title" value="Solventar problema impresora" />
+		<property name="dutyDescription" value="Solucionar problema evita funcionamiento de impresora" />
+		<property name="percentage" value="50" />
+		<property name="job" ref="job1" />
+	</bean>
+
+	<bean id="manDuty02" class="acme.entities.mandatoryDuties.MandatoryDuty">
+		<property name="title" value="Solventar problema CSS web" />
+		<property name="dutyDescription" value="Conseguir mostrar el logo de la empresa en la web corporativa" />
+		<property name="percentage" value="37" />
+		<property name="job" ref="job1"/>
+	</bean>
+
+	<bean id="manDuty03" class="acme.entities.mandatoryDuties.MandatoryDuty">
+		<property name="title" value="Solventar todos nuestros problemas" />
+		<property name="dutyDescription" value="Literalmente lo que pone en el titulo, mas claro no podria ser." />
+		<property name="percentage" value="100" />
+		<property name="job" ref="job2"/>
+	</bean>
+	
+	<bean id="manDuty04" class="acme.entities.mandatoryDuties.MandatoryDuty">
+		<property name="title" value="Solventar todos nuestros problemas 2" />
+		<property name="dutyDescription" value="Literalmente lo que pone en el titulo, mas claro no podria ser. 2" />
+		<property name="percentage" value="100" />
+		<property name="job" ref="job3"/>
+	</bean>
+	
+	<bean id="manDuty05" class="acme.entities.mandatoryDuties.MandatoryDuty">
+		<property name="title" value="Solventar todos nuestros problemas 3" />
+		<property name="dutyDescription" value="Literalmente lo que pone en el titulo, mas claro no podria ser. 3" />
+		<property name="percentage" value="100" />
+		<property name="job" ref="job4"/>
+	</bean>
+	
+	<bean id="manDuty06" class="acme.entities.mandatoryDuties.MandatoryDuty">
+		<property name="title" value="Solventar todos nuestros problemas" />
+		<property name="dutyDescription" value="Literalmente lo que pone en el titulo, mas claro no podria ser." />
+		<property name="percentage" value="100" />
+		<property name="job" ref="job5"/>
+	</bean>
+
+	<!-- /////////////////// AUDITORS ///////////////////////// -->
+
+	<bean name="auditor1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="auditor1" />
+		<property name="password" value="auditor1" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Auditor" />
+				<property name="surname" value="One" />
+				<property name="email" value="Auditor1@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="auditor1Employer" />
+				<ref bean="auditor1Authenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="auditor1Employer" class="acme.entities.roles.Auditor">
+		<property name="firm" value="Firm 1" />
+		<property name="responsabilityStatement" value="Express an opinion on the financial statements" />
+		<property name="accepted" value="true"/>
+		<property name="userAccount" ref="auditor1UserAccount" />
+	</bean>
+
+	<bean name="auditor1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="auditor1UserAccount" />
+	</bean>
+
+	<bean name="auditor2UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="auditor2" />
+		<property name="password" value="auditor2" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Auditor" />
+				<property name="surname" value="Two" />
+				<property name="email" value="Auditor2@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="auditor2Employer" />
+				<ref bean="auditor2Authenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="auditor2Employer" class="acme.entities.roles.Auditor">
+		<property name="firm" value="Firm 2" />
+		<property name="responsabilityStatement" value="Express an opinion on the financial statements" />
+		<property name="accepted" value="false"/>
+		<property name="userAccount" ref="auditor2UserAccount" />
+	</bean>
+
+	<bean name="auditor2Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="auditor2UserAccount" />
+	</bean>
+
+	<!-- /////////////////// AUDITOR RECORDS ///////////////////////// -->
+
+	<bean name="auditRecord1" class="acme.entities.auditRecords.AuditRecord">
+		<property name="title" value="Audit Record 1 " />
+		<property name="creationMoment" value="2021/11/28 10:30" />
+		<property name="body" value="Audit Record Description" />
+		<property name="published" value="true" />
+		<property name="auditor" ref="auditor1Employer" />
+		<property name="job" ref="job3" />
+
+	</bean>
+
+	<bean name="auditRecord2" class="acme.entities.auditRecords.AuditRecord">
+		<property name="title" value="Audit Record 2 " />
+		<property name="creationMoment" value="2021/12/01 11:30" />
+		<property name="body" value="Audit Record Description" />
+		<property name="published" value="true" />
+		<property name="auditor" ref="auditor1Employer" />
+		<property name="job" ref="job4" />
+
+	</bean>
+
+	<bean name="auditRecord3" class="acme.entities.auditRecords.AuditRecord">
+		<property name="title" value="Audit Record 3 " />
+		<property name="creationMoment" value="2021/11/30 12:30" />
+		<property name="body" value="Audit Record Description" />
+		<property name="published" value="true" />
+		<property name="auditor" ref="auditor2Employer" />
+		<property name="job" ref="job5" />
+
+	</bean>
+	
+	<!-- MessageThread -->
+	
+	
+	<bean name="MessageThread1" class="acme.entities.messageThreads.MessageThread">
+		<property name="title" value="Message Thread 1 " />
+		<property name="creationMoment" value="2019/11/28 10:30" />
+		<property name="creator" ref="employer1Authenticated"/>		
+	</bean>
+
+
+	<bean name="MessageThread2" class="acme.entities.messageThreads.MessageThread">
+		<property name="title" value="Message Thread 2" />
+		<property name="creationMoment" value="2021/12/03 11:00" />
+		<property name="creator" ref="auditor1Authenticated"/>
+	</bean>
+	
+	
+	<!-- Authenticated_MessageThread -->
+	
+	<bean name="AuthenticatedMessageThread1" class="acme.entities.authenticatedMessageThreads.AuthenticatedMessageThread">
+		<property name="authenticated" ref="employer1Authenticated"/>
+	    <property name="messageThread" ref="MessageThread1"/>
+	</bean>
+	
+	<bean name="AuthenticatedMessageThread2" class="acme.entities.authenticatedMessageThreads.AuthenticatedMessageThread">
+		<property name="authenticated" ref="worker1Authenticated"/>
+	    <property name="messageThread" ref="MessageThread1"/>
+	</bean>
+	
+	<bean name="AuthenticatedMessageThread3" class="acme.entities.authenticatedMessageThreads.AuthenticatedMessageThread">
+		<property name="authenticated" ref="auditor1Authenticated"/>
+	    <property name="messageThread" ref="MessageThread2"/>
+	</bean>
+	
+	
+
+       <!-- Message -->
+
+	<bean name="Message1" class="acme.entities.messages.Message">
+		<property name="title" value="Message 1 " />
+		<property name="creationMoment" value="2021/11/28 11:30" />
+		<property name="tags" value="primero,importante"/>
+		<property name="body" value="Hola, ¿qué tal?"/>
+		<property name ="author" ref ="worker1Authenticated"/>
+		<property name ="messageThread" ref ="MessageThread1"/>
+		
+	</bean>
+	
+	<bean name="Message2" class="acme.entities.messages.Message">
+		<property name="title" value="Message 2 " />
+		<property name="creationMoment" value="2021/11/28 12:30" />
+		<property name="tags" value="importante"/>
+		<property name="body" value="¡Muy bien!"/>
+		<property name ="author" ref ="employer1Authenticated"/>
+		<property name ="messageThread" ref ="MessageThread1"/>
+		
+	</bean>
+	
+	<bean name="Message3" class="acme.entities.messages.Message">
+		<property name="title" value="Message 3" />
+		<property name="creationMoment" value="2021/12/03 12:00" />
+		<property name="tags" value="primero,importante"/>
+		<property name="body" value="Vaya, no hay nadie más..."/>
+		<property name ="author" ref ="auditor1Authenticated"/>
+		<property name ="messageThread" ref ="MessageThread2"/>
+		
+	</bean>
+	
+
+
+
+	<!-- /////////////////// FIN ///////////////////////// -->
+</beans>

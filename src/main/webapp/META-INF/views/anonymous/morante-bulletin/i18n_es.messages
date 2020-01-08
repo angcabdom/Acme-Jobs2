@@ -1,0 +1,8 @@
+anonymous.morante-bulletin.list.label.moment = Momento
+anonymous.morante-bulletin.list.label.author = Autor
+anonymous.morante-bulletin.list.label.text = Texto
+
+anonymous.morante-bulletin.form.label.author = Autor:
+anonymous.morante-bulletin.form.label.text = Texto:
+anonymous.morante-bulletin.form.button.create = Publicar
+anonymous.morante-bulletin.form.button.return = Volver

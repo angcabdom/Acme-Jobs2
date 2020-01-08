@@ -1,0 +1,57 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not job any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+employer.job.list.label.reference = Referencia
+employer.job.list.label.title = Título
+employer.job.list.label.deadline = Fecha Límite
+
+employer.job.form.label.title = Título:
+employer.job.form.label.reference = Referencia:
+employer.job.form.label.deadline = Fecha Límite:
+employer.job.form.label.salary = Salario:
+employer.job.form.label.moreInfo = Más información:
+employer.job.form.label.descriptor = Descripción:
+employer.job.form.label.finalMode = Modo final
+
+employer.job.form.button.create = Crear
+
+employer.job.label.accept = Acepto 
+employer.job.error.must-accept = Debe aceptar 
+
+employer.job.form.button.listAuditRecord = Registros de autoría de este trabajo
+
+employer.job.form.button.apply = Crear aplicación para este trabajo
+employer.job.form.button.createAuditRecord = Crear Auditoría para este trabajo
+employer.job.form.button.mandatoryDuty =Mostrar Deberes obligatorios
+employer.mandatoryDuty.form.button.create = Añadir Deber obligatorio
+
+employer.job.form.button.update = Actualizar
+employer.job.form.button.delete = Eliminar
+employer.job.form.button.create = Crear
+
+employer.job.form.button.list.application.byReference = Listar Peticiones por Referencia
+employer.job.form.button.list.application.byStatus = Listar Peticiones por Estado
+employer.job.form.button.list.application.byCreation = Listar Peticiones por Momento de Creación
+
+employer.job.error.mandatoryDuties = No deben de haber deberes obligatorios asociados para poder eliminar el trabajo
+employer.job.error.auditRecords = No deben de haber registros de auditorías asociados para poder eliminar el trabajo
+employer.job.error.applications = No deben de haber aplicaciones de trabajadores asociadas para poder eliminar el trabajo
+
+
+employer.job.error.finalMode = Los trabajos que estén en modo final no se pueden modificar
+employer.job.error.finalMode.workload = Para pasar a modo final sus deberes obligatorios deben sumar una carga de trabajo del 100
+employer.job.error.finalMode.spam = El descriptor no puede ser spam
+employer.job.error.finalMode.create = No puedes ponerlo en modo final hasta que no tenga deberes obligatorios
+
+employer.job.error.deadline-future = La fecha límite debe de ser en un día al menos desde este momento
+
+
+employer.job.form.button.return = Volver
+

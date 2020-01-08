@@ -1,0 +1,8 @@
+anonymous.caballero-bulletin.list.label.moment = Moment
+anonymous.caballero-bulletin.list.label.author = Author
+anonymous.caballero-bulletin.list.label.text = Text
+
+anonymous.caballero-bulletin.form.label.author = Author:
+anonymous.caballero-bulletin.form.label.text = Text:
+anonymous.caballero-bulletin.form.button.create = Post bulletin
+anonymous.caballero-bulletin.form.button.return = Return 

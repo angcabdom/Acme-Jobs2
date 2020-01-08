@@ -1,0 +1,23 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not job any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.authenticated-message-thread.list.label.authenticated = Nombre de usuario
+
+authenticated.authenticated-message-thread.form.label.authenticated = Nombre del usuario:
+authenticated.authenticated-message-thread.form.label.messageThreadName = Hilo de mensajes:
+
+authenticated.authenticated-message-thread.form.button.create = Añadir
+authenticated.authenticated-message-thread.form.button.delete = Eliminar
+authenticated.authenticated-message-thread.button.return = Volver
+
+
+authenticated.authenticated-message-thread.error.authenticated = El usuario no existe
+authenticated.authenticated-message-thread.error.authenticatedMessageThread = El usuario ya se encuentra en el hilo de mensajes
+authenticated.authenticated-message-thread.error.authenticated.delete = No se puede expulsar al creador de su hilo de mensajes

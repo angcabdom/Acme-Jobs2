@@ -1,0 +1,11 @@
+administrator.auditor.form.label.firm = Firma
+administrator.auditor.form.label.responsabilityStatement = Hoja de Responsabilidad
+administrator.auditor.form.label.accepted = Estado de la cuenta
+	
+administrator.auditor.form.button.return = Volver
+administrator.auditor.form.button.update = Actualizar
+
+administrator.auditor.list.label.firm = Firma
+administrator.auditor.list.label.accepted = Estado de la cuenta
+
+administrator.auditor.error.accepted = Solo puede poner: true o false

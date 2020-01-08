@@ -1,0 +1,11 @@
+#tester=tester (+consumer+provider)
+#administrator=administrator
+# 
+#employer1=employer1
+#employer2=employer2
+#worker1=worker1
+#worker2=worker2
+#auditor1=auditor1
+#auditor2=auditor2
+
+

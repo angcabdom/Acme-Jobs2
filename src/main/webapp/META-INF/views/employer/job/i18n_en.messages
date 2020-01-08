@@ -1,0 +1,54 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not job any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+employer.job.list.label.reference = Reference
+employer.job.list.label.title = Title
+employer.job.list.label.deadline = Deadline
+
+employer.job.form.label.reference = Reference:
+employer.job.form.label.title = Title:
+employer.job.form.label.deadline = Deadline:
+employer.job.form.label.salary = Salary:
+employer.job.form.label.moreInfo = More Info:
+employer.job.form.label.descriptor = Descriptor:
+employer.job.form.label.finalMode = Final mode
+
+employer.job.label.accept = Accept 
+employer.job.form.button.create = Create
+
+employer.job.form.button.return = Return
+employer.job.form.button.listAuditRecord = Audit Records of this Job
+
+employer.job.form.button.apply= Apply for this job
+employer.job.form.button.createAuditRecord = Create Audit Record for this Job
+employer.job.form.button.mandatoryDuty = List its Mandatory Duties
+employer.mandatoryDuty.form.button.create = Add a Mandatory Duty
+
+employer.job.form.button.update = Update
+employer.job.form.button.delete = Delete
+employer.job.form.button.create = Create
+
+employer.job.form.button.list.application.byReference = List Applications by Reference
+employer.job.form.button.list.application.byStatus = List Applications by Status
+employer.job.form.button.list.application.byCreation = List Applications by Creation Moment
+
+employer.job.error.must-accept = Must accept 
+employer.job.error.mandatoryDuties = There must not be mandatory duties linked to this job in order to delete it
+employer.job.error.auditRecords = There must not be audit records linked to this job in order to delete it
+employer.job.error.applications = There must not be applications by workers linked to this job in order to delete it
+
+employer.job.error.finalMode = Jobs in final mode can not be updated
+employer.job.error.finalMode.workload = Job's mandatory duties' percentage of weekly workload must sum up to 100% to save the job as final mode
+employer.job.error.finalMode.spam = Descriptor must not be spam.
+employer.job.error.finalMode.create = You cannot set it into final mode until you have mandatory duties.
+
+employer.job.error.deadline-future = Deadline should be at least 1 day in the future from this moment 
+
+

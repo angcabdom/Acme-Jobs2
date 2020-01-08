@@ -1,0 +1,19 @@
+worker.application.form.label.reference = Referencia
+worker.application.form.label.deadline = Fecha Limite
+worker.application.form.label.status = Estado
+worker.application.form.label.statement = Declaración
+worker.application.form.label.skills = Habilidades
+worker.application.form.label.qualifications = Calificaciones 
+worker.application.form.label.justification = Justificación
+	
+worker.application.form.button.return = Volver
+
+worker.application.list.label.reference = Referencia
+worker.application.list.label.deadline = Fecha Limite
+worker.application.list.label.status = Estado
+worker.application.form.label.jobReference = Referencia del trabajo relacionado
+
+worker.application.form.label.workerReference = Referencia del trabajador
+worker.application.form.button.create = Crear aplicación
+
+worker.application.error.deadline-future = La fecha límite debe estar en el futuro

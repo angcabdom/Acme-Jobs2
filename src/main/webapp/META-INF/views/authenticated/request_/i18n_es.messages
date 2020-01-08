@@ -1,0 +1,33 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.request_.form.label.title = Titulo
+authenticated.request_.form.label.moment = Momento
+authenticated.request_.form.label.dateLimit = Fecha Limite
+authenticated.request_.form.label.text = Texto
+authenticated.request_.form.label.money = Dinero
+authenticated.request_.form.label.ticker = Ticker
+
+anonymous.user-account.label.accept = Confirmar
+
+authenticated.request_.form.button.create = Crear
+authenticated.request_.form.button.return = Volver
+
+authenticated.request_.list.label.title = Titulo
+authenticated.request_.list.label.dateLimit = Fecha Limite
+authenticated.request_.list.label.money = Dinero
+authenticated.request_.list.label.ticker = Ticker
+
+authenticated.request_.error.must-accept = Debe aceptar 
+
+authenticated.request_.error.dateLimit-future = La fecha límite debe de ser en un día al menos desde este momento
+
+authenticated.request_.error.money = Moneda no valida
+

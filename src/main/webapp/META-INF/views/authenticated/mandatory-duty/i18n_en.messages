@@ -1,0 +1,25 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not job any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.mandatory-duty.list.label.title = Title
+authenticated.mandatory-duty.list.label.percentage = Percentage
+
+authenticated.mandatory-duty.form.label.title = Title:
+authenticated.mandatory-duty.form.label.dutyDescription = Description:
+authenticated.mandatory-duty.form.label.percentage = Percentage:
+authenticated.mandatory-duty.form.label.jobReference = Job Reference:
+
+employer.mandatoryDuty.form.button.create = Create
+employer.mandatoryDuty.form.button.update = Update
+employer.mandatoryDuty.form.button.delete = Delete
+
+authenticated.mandatory-duty.form.button.return = Return
+
+
