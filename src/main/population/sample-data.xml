@@ -261,6 +261,7 @@
 				<property name="name" value="Employer" />
 				<property name="surname" value="One" />
 				<property name="email" value="employer1@acme.com" />
+				<property name="phone" value="+183 (14) 937403629" />
 			</bean>
 		</property>
 		<property name="roles">
