@@ -50,25 +50,12 @@
 		<property name="roles">
 			<list>
 				<ref bean="authenticatedAuthenticated" />
-				<ref bean="authenticatedProvider" />
-				<ref bean="authenticatedConsumer" />
 			</list>
 		</property>
 	</bean>
 	
 	<bean name="authenticatedAuthenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="authenticatedUserAccount" />
-	</bean>
-	
-	<bean name="authenticatedProvider" class="acme.entities.roles.Provider">
-		<property name="userAccount" ref="authenticatedUserAccount" />
-		<property name="company" value="Tester" />
-		<property name="sector" value="Tester" />
-	</bean>
-	<bean name="authenticatedConsumer" class="acme.entities.roles.Consumer">
-		<property name="userAccount" ref="authenticatedUserAccount" />
-		<property name="company" value="Tester" />
-		<property name="sector" value="Tester" />
 	</bean>
 	
 

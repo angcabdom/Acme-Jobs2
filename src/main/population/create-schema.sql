@@ -128,15 +128,6 @@
         `spam_words` varchar(1000)
     ) engine=InnoDB;
 
-    create table `consumer` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `correa_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -229,43 +220,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `offer` (
-       `id` integer not null,
-        `version` integer not null,
-        `deadline` datetime(6),
-        `moment` datetime(6),
-        `money_max_amount` double precision,
-        `money_max_currency` varchar(255),
-        `money_min_amount` double precision,
-        `money_min_currency` varchar(255),
-        `text` varchar(1000),
-        `ticker` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `provider` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `request_` (
-       `id` integer not null,
-        `version` integer not null,
-        `date_limit` datetime(6),
-        `moment` datetime(6),
-        `money_amount` double precision,
-        `money_currency` varchar(255),
-        `text` varchar(1000),
-        `ticker` varchar(255),
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `shout` (
        `id` integer not null,
         `version` integer not null,
@@ -302,7 +256,6 @@
 
     insert into `hibernate_sequence` values ( 1 );
 create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
-create index IDXdwumdwpjcwdk1mef9ua69yc2p on `application` (`reference`);
 create index IDX2q2747fhp099wkn3j2yt05fhs on `application` (`status`);
 create index IDX618is0hf6jk8mhi0qeume2hqw on `application` (`creation_moment`);
 
@@ -311,17 +264,10 @@ create index IDX618is0hf6jk8mhi0qeume2hqw on `application` (`creation_moment`);
 create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 create index IDX7y4rcwjsl6wvsrlyq38xtq8bu on `company_record` (`name`);
 create index IDX1cpy8kxlsu865sf28r64gus4k on `investor_record` (`name`);
+create index IDXfdmpnr8o4phmk81sqsano16r on `job` (`deadline`);
 
     alter table `job` 
        add constraint UK_7jmfdvs0b0jx7i33qxgv22h7b unique (`reference`);
-create index IDXq2o9psuqfuqmq59f0sq57x9uf on `offer` (`deadline`);
-
-    alter table `offer` 
-       add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
-create index IDXn3v48hbbpyaqbons3pqgno06y on `request_` (`date_limit`);
-
-    alter table `request_` 
-       add constraint UK_4kaq4lybvdlfnbqjbdbwjlqkl unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
@@ -381,11 +327,6 @@ create index IDXn3v48hbbpyaqbons3pqgno06y on `request_` (`date_limit`);
        foreign key (`configuration_id`) 
        references `configuration` (`id`);
 
-    alter table `consumer` 
-       add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
-
     alter table `employer` 
        add constraint FK_na4dfobmeuxkwf6p75abmb2tr 
        foreign key (`user_account_id`) 
@@ -415,11 +356,6 @@ create index IDXn3v48hbbpyaqbons3pqgno06y on `request_` (`date_limit`);
        add constraint `FK3fa4h4tfet2kocvatib2ovhsa` 
        foreign key (`creator_id`) 
        references `authenticated` (`id`);
-
-    alter table `provider` 
-       add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
-       foreign key (`user_account_id`) 
-       references `user_account` (`id`);
 
     alter table `worker` 
        add constraint FK_l5q1f33vs2drypmbdhpdgwfv3 

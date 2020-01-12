@@ -10,7 +10,7 @@
 - they accept any liabilities with respect to them.
 --%>
 
-<%@page language="java" import="acme.framework.helpers.PrincipalHelper,acme.entities.roles.Provider,acme.entities.roles.Consumer"%>
+<%@page language="java"%>
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
@@ -65,10 +65,7 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.offer.list" action="/authenticated/offer/list" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.request_.list" action="/authenticated/request_/list" />
-			<acme:menu-separator />
+		
 			<acme:menu-suboption code="master.menu.challenge.list" action="/authenticated/challenge/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.job.listAll" action="/authenticated/job/list" />
@@ -102,16 +99,6 @@
 			<acme:menu-suboption code="master.menu.auditRecord.list" action="/auditor/audit-record/list_mine" />
 		</acme:menu-option>
 
-		<!----------------------------- CONSUMER --------------------------------------->
-		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
-			<acme:menu-suboption code="master.menu.offer.create" action="/authenticated/offer/create" />
-		</acme:menu-option>
-
-
-		<!----------------------------- PROVIDER --------------------------------------->
-		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
-			<acme:menu-suboption code="master.menu.request_.create" action="/authenticated/request_/create" />
-		</acme:menu-option>
 
 
 
@@ -154,10 +141,6 @@
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update" />
-			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create"
-				access="!hasRole('Provider')" />
-			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update"
-				access="hasRole('Provider')" />
 
 			<acme:menu-suboption code="master.menu.user-account.become-employer" action="/authenticated/employer/create"
 				access="!hasRole('Employer')" />
@@ -172,10 +155,6 @@
 				access="!hasRole('Auditor')" />
 			<acme:menu-suboption code="master.menu.user-account.auditor" action="/authenticated/auditor/update" access="hasRole('Auditor')" />
 
-			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create"
-				access="!hasRole('Consumer')" />
-			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update"
-				access="hasRole('Consumer')" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()" />
