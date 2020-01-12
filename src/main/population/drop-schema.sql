@@ -43,10 +43,6 @@
        drop 
        foreign key `FK5lk29cpqe3960a943x8x8j4yh`;
 
-    alter table `consumer` 
-       drop 
-       foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
-
     alter table `employer` 
        drop 
        foreign key FK_na4dfobmeuxkwf6p75abmb2tr;
@@ -70,10 +66,6 @@
     alter table `message_thread` 
        drop 
        foreign key `FK3fa4h4tfet2kocvatib2ovhsa`;
-
-    alter table `provider` 
-       drop 
-       foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
     alter table `worker` 
        drop 
@@ -105,8 +97,6 @@
 
     drop table if exists `configuration_spam_words`;
 
-    drop table if exists `consumer`;
-
     drop table if exists `correa_bulletin`;
 
     drop table if exists `employer`;
@@ -124,12 +114,6 @@
     drop table if exists `message_thread`;
 
     drop table if exists `morante_bulletin`;
-
-    drop table if exists `offer`;
-
-    drop table if exists `provider`;
-
-    drop table if exists `request_`;
 
     drop table if exists `shout`;
 

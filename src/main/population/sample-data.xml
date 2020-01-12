@@ -156,29 +156,6 @@
 		<property name="text" value="Friday, what time hfghf is it?" />
 	</bean>
 
-
-	<!-- /////////////////// OFFERS ///////////////////////// -->
-	<bean id="offer01" class="acme.entities.offers.Offer">
-		<property name="title" value="Sample offer 1" />
-		<property name="ticker" value="OACBA-00001" />
-		<property name="moment" value="2019/09/09 12:15" />
-		<property name="deadline" value="2019/12/09 10:00" />
-		<property name="text" value="Description sample" />
-		<property name="moneyMin" value="€ 700" />
-		<property name="moneyMax" value="€ 1000" />
-	</bean>
-
-	<bean id="offer02" class="acme.entities.offers.Offer">
-		<property name="title" value="Sample offer 2" />
-		<property name="ticker" value="OCAAA-01002" />
-		<property name="moment" value="2019/10/09 10:00" />
-		<property name="deadline" value="2019/12/09 12:15" />
-		<property name="text" value="This is a sample of the description of an offer" />
-		<property name="moneyMin" value="€ 750" />
-		<property name="moneyMax" value="€ 1000" />
-	</bean>
-
-
 	<!-- /////////////////// COMPANY RECORDS ///////////////////////// -->
 	<bean id="CompanyRecord01" class="acme.entities.companyRecords.CompanyRecord">
 		<property name="name" value="Google inc" />
@@ -252,27 +229,6 @@
 		<property name="statement" value="The investing statement 03" />
 		<property name="stars" value="1" />
 	</bean>
-
-
-	<!-- /////////////////// REQUESTS ///////////////////////// -->
-	<bean id="request01" class="acme.entities.requests_.Request_">
-		<property name="title" value="Trabajo de fontanero" />
-		<property name="moment" value="2019/09/09 10:15" />
-		<property name="dateLimit" value="2019/11/28 10:30" />
-		<property name="text" value="lfdksjghd" />
-		<property name="money" value="€ 1000" />
-		<property name="ticker" value="RXXXX-99109" />
-	</bean>
-
-	<bean id="request02" class="acme.entities.requests_.Request_">
-		<property name="title" value="Trabajo de fontanero2" />
-		<property name="moment" value="2019/09/09 10:14" />
-		<property name="dateLimit" value="2019/11/28 10:36" />
-		<property name="text" value="lfdksjghdfdgf" />
-		<property name="money" value="€ 750" />
-		<property name="ticker" value="RXXXX-99119" />
-	</bean>
-
 
 	<!-- /////////////////// CONFIGURATION ///////////////////////// -->
 	<bean id="configuration01" class="acme.entities.configuration.Configuration">
