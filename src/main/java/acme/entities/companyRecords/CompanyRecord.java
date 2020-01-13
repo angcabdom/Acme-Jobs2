@@ -7,11 +7,11 @@ import javax.persistence.Index;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 
+import acme.datatypes.Phone;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -44,9 +44,9 @@ public class CompanyRecord extends DomainEntity {
 	@NotBlank
 	private String				webSite;
 
-	@Pattern(regexp = "^[+]?\\d{0,3}?[ ]?[(]?\\d{0,4}?[)]?[ ]?\\d{6,10}$")
-	@NotBlank
-	private String				phone;
+	//@Pattern(regexp = "^[+]?\\d{0,3}?[ ]?[(]?\\d{0,4}?[)]?[ ]?\\d{6,10}$")
+	@NotNull
+	private Phone				phone;
 
 	@NotBlank
 	private String				email;
