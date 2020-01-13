@@ -9,7 +9,7 @@
 	<acme:form-textbox code="administrator.company-record.form.label.ceo" path="ceo" />
 	<acme:form-textarea code="administrator.company-record.form.label.activities" path="activities" />
 	<acme:form-url code="administrator.company-record.form.label.webSite" path="webSite" />
-	<acme:form-textbox placeholder="+34 600000000" code="administrator.company-record.form.label.phone" path="phone" />
+	<acme:form-phone code="administrator.company-record.form.label.phone" path="phone" />
 	<acme:form-textbox placeholder="example@example.com" code="administrator.company-record.form.label.email" path="email" />
 	<acme:form-textbox code="administrator.company-record.form.label.stars" path="stars" />
 	<acme:form-checkbox code="administrator.company-record.form.label.incorporated" path="incorporated" />

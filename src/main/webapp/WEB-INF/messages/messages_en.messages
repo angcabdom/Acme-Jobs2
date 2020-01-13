@@ -22,3 +22,7 @@ default.placeholder.url = http://www.acme.com
 default.error.conversion = Invalid value
 default.error.endpoint-unavailable = End-point not available
 default.error.not-authorised = Access is not authorised
+
+#--- patterns---
+default.error.pattern.application = Invalid reference, here is an example: EMP1-JOB1:AP01
+default.error.pattern.job = Invalid reference, here is an example: EMP1-JOB1 

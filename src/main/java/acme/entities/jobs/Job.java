@@ -35,7 +35,7 @@ public class Job extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "^\\w{4}\\-\\w{4}$")
+	@Pattern(regexp = "^\\w{4}\\-\\w{4}$", message = "Error of pattern, here is an example/ Error en el patrón, aquí tiene un ejemplo: EMP1-JOB1")
 	private String				reference;
 
 	@NotBlank

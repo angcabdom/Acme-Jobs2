@@ -163,7 +163,7 @@
 		<property name="ceo" value="Sundar Pichai" />
 		<property name="activities" value="Desarrollo y mantenimiento de aplicaciones web" />
 		<property name="webSite" value="https://www.google.com" />
-		<property name="phone" value="+183 (1436) 1937403629" />
+		<property name="phone" value="+183 (14) 723840662" />
 		<property name="email" value="google@google.com" />
 		<property name="incorporated" value="True" />
 		<property name="stars" value="5" />
@@ -175,7 +175,7 @@
 		<property name="ceo" value="Bob Swan" />
 		<property name="activities" value="Desarrollo y producción de hardware" />
 		<property name="webSite" value="https://www.intel.es/content/www/es/es/homepage.html" />
-		<property name="phone" value="036295" />
+		<property name="phone" value="+34 991541312" />
 		<property name="email" value="intel@intel.com" />
 		<property name="incorporated" value="True" />
 		<property name="stars" value="4" />

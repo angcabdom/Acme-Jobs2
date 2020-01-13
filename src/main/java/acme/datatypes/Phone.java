@@ -22,7 +22,7 @@ public class Phone extends DomainEntity {
 	@Range(min = 1, max = 999)
 	private Integer				countryCode;
 
-	@Pattern(regexp = "\\d{1,6}", message = "defaut.error.conversion")
+	@Pattern(regexp = "\\d{1,6}", message = "default.error.conversion")
 	private String				areaCode;
 
 	@Pattern(regexp = "\\d{1,9}([\\s-]\\d{1,9}){0,5}", message = "default.error.conversion")
