@@ -54,7 +54,7 @@ public class AuditorAuditRecordShowService implements AbstractShowService<Audito
 		model.setAttribute("jobReference", jobReference);
 
 		request.unbind(entity, model, "title", "creationMoment");
-		request.unbind(entity, model, "body", "published");
+		request.unbind(entity, model, "body", "finalMode");
 
 	}
 

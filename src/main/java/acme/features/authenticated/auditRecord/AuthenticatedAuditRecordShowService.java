@@ -36,7 +36,7 @@ public class AuthenticatedAuditRecordShowService implements AbstractShowService<
 		auditRecord = this.repository.findOneById(auditorRecordId);
 		auditor = auditRecord.getAuditor();
 		principal = request.getPrincipal();
-		result = auditor.getUserAccount().getId() == principal.getAccountId() || auditRecord.getPublished() == true;
+		result = auditor.getUserAccount().getId() == principal.getAccountId() || auditRecord.getFinalMode() == true;
 
 		return result;
 	}
@@ -51,7 +51,7 @@ public class AuthenticatedAuditRecordShowService implements AbstractShowService<
 		model.setAttribute("jobReference", jobReference);
 
 		request.unbind(entity, model, "title", "creationMoment");
-		request.unbind(entity, model, "body", "published");
+		request.unbind(entity, model, "body", "finalMode");
 
 	}
 

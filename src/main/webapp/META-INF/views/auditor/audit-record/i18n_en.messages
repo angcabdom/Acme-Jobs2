@@ -15,10 +15,14 @@ auditor.audit-record.list.label.creationMoment = Creation moment
 auditor.audit-record.form.label.title = Title:
 auditor.audit-record.form.label.creationMoment = Creation Moment:
 auditor.audit-record.form.label.body = Body:
-auditor.audit-record.form.label.published = Published:
+auditor.audit-record.form.label.finalMode = Final Mode:
 auditor.audit-record.form.label.jobReference = Job Reference:
 
 
 auditor.audit-record.form.button.return = Return
 auditor.audit-record.form.button.create = Create
+auditor.audit-record.form.button.update = Update
+
+auditor.auditRecord.error.finalMode = You can not go from publish to draft
+auditor.auditRecord.error.finalMode.spam = The body includes spam
 

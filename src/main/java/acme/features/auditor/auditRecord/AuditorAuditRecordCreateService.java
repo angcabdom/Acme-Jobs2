@@ -55,7 +55,7 @@ public class AuditorAuditRecordCreateService implements AbstractCreateService<Au
 		model.setAttribute("idj", jobId);
 		model.setAttribute("jobReference", jobReference);
 
-		request.unbind(entity, model, "title", "body", "published");
+		request.unbind(entity, model, "title", "body", "finalMode");
 	}
 
 	@Override

@@ -593,7 +593,7 @@
 		<property name="title" value="Audit Record 1 " />
 		<property name="creationMoment" value="2021/11/28 10:30" />
 		<property name="body" value="Audit Record Description" />
-		<property name="published" value="true" />
+		<property name="finalMode" value="true" />
 		<property name="auditor" ref="auditor1Employer" />
 		<property name="job" ref="job3" />
 
@@ -603,7 +603,7 @@
 		<property name="title" value="Audit Record 2 " />
 		<property name="creationMoment" value="2021/12/01 11:30" />
 		<property name="body" value="Audit Record Description" />
-		<property name="published" value="true" />
+		<property name="finalMode" value="true" />
 		<property name="auditor" ref="auditor1Employer" />
 		<property name="job" ref="job4" />
 
@@ -613,7 +613,7 @@
 		<property name="title" value="Audit Record 3 " />
 		<property name="creationMoment" value="2021/11/30 12:30" />
 		<property name="body" value="Audit Record Description" />
-		<property name="published" value="true" />
+		<property name="finalMode" value="true" />
 		<property name="auditor" ref="auditor2Employer" />
 		<property name="job" ref="job5" />
 

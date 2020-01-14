@@ -15,10 +15,14 @@ auditor.audit-record.list.label.creationMoment = Fecha de creación
 auditor.audit-record.form.label.title = Título:
 auditor.audit-record.form.label.creationMoment = Fecha de creación:
 auditor.audit-record.form.label.body = Más información:
-auditor.audit-record.form.label.published = Publicado:
+auditor.audit-record.form.label.finalMode = Modo Final:
 auditor.audit-record.form.label.jobReference = Referencia del trabajo:
 
 
 auditor.audit-record.form.button.return = Volver
 auditor.audit-record.form.button.create = Crear
+auditor.audit-record.form.button.update = Actualizar
+
+auditor.auditRecord.error.finalMode = No se puede pasar de publicado a plantilla
+auditor.auditRecord.error.finalMode.spam = Más información incluye spam
 

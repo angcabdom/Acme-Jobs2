@@ -42,9 +42,9 @@
     create table `audit_record` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(1000),
+        `body` varchar(255),
         `creation_moment` datetime(6),
-        `published` bit,
+        `final_mode` bit,
         `title` varchar(255),
         `auditor_id` integer not null,
         `job_id` integer not null,
