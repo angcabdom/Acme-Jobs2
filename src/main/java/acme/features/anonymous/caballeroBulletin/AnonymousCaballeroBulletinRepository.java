@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.caballeroBulletins.CaballeroBulletin;
+import acme.entities.configuration.Configuration;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -14,4 +15,7 @@ public interface AnonymousCaballeroBulletinRepository extends AbstractRepository
 
 	@Query("select c from CaballeroBulletin c")
 	Collection<CaballeroBulletin> findMany();
+
+	@Query("select c from Configuration c")
+	Configuration findConfiguration();
 }

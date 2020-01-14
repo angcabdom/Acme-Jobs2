@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.configuration.Configuration;
 import acme.entities.moranteBulletins.MoranteBulletin;
 import acme.framework.repositories.AbstractRepository;
 
@@ -14,4 +15,7 @@ public interface AnonymousMoranteBulletinRepository extends AbstractRepository {
 
 	@Query("select m from MoranteBulletin m")
 	Collection<MoranteBulletin> findMany();
+
+	@Query("select c from Configuration c")
+	Configuration findConfiguration();
 }

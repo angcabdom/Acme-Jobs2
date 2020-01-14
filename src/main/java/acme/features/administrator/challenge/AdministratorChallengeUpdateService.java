@@ -71,7 +71,7 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		//validar que las palabras de texto no sean spam
 		String texto = request.getModel().getString("description");
 		Boolean esSpam = this.esSpam(texto);
-		errors.state(request, !esSpam, "description", "administrator.challenge.error.text.spam");
+		errors.state(request, !esSpam, "description", "error.text.spam");
 
 	}
 	//metodo para comprobar que las palabras no sean spam

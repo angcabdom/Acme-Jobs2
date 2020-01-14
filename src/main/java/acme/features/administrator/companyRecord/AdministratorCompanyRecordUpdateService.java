@@ -68,7 +68,7 @@ public class AdministratorCompanyRecordUpdateService implements AbstractUpdateSe
 		//validar que las palabras de texto no sean spam
 		String texto = request.getModel().getString("activities");
 		Boolean esSpam = this.esSpam(texto);
-		errors.state(request, !esSpam, "activities", "administrator.companyRecord.error.text.spam");
+		errors.state(request, !esSpam, "activities", "error.text.spam");
 
 	}
 	//metodo para comprobar que las palabras no sean spam

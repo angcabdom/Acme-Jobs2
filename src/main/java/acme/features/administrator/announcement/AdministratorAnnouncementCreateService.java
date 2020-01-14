@@ -71,7 +71,7 @@ public class AdministratorAnnouncementCreateService implements AbstractCreateSer
 		//		comprobar que el texto no contiene spam
 		String texto = request.getModel().getString("text");
 		Boolean esSpam = this.esSpam(texto);
-		errors.state(request, !esSpam, "text", "administrator.announcement.error.text.spam");
+		errors.state(request, !esSpam, "text", "error.text.spam");
 
 	}
 	//metodo para comprobar que las palabras no sean spam

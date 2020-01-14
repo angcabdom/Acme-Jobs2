@@ -73,7 +73,7 @@ public class AdministratorInvestorRecordCreateService implements AbstractCreateS
 		//validar que las palabras de texto no sean spam
 		String texto = request.getModel().getString("statement");
 		Boolean esSpam = this.esSpam(texto);
-		errors.state(request, !esSpam, "statement", "administrator.investorRecord.error.text.spam");
+		errors.state(request, !esSpam, "statement", "error.text.spam");
 
 	}
 	//metodo para comprobar que las palabras no sean spam
