@@ -3,7 +3,6 @@ package acme.entities.auditRecords;
 
 import java.util.Date;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
@@ -33,11 +32,10 @@ public class AuditRecord extends DomainEntity {
 	private Date				creationMoment;
 
 	@NotBlank
-	@Column(length = 1000)
 	private String				body;
 
 	@NotNull
-	private Boolean				published;
+	private Boolean				finalMode;
 
 	@NotNull
 	@Valid
