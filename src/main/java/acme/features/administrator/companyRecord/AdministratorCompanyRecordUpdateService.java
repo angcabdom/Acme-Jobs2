@@ -1,10 +1,13 @@
 
 package acme.features.administrator.companyRecord;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.companyRecords.CompanyRecord;
+import acme.entities.configuration.Configuration;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -62,6 +65,31 @@ public class AdministratorCompanyRecordUpdateService implements AbstractUpdateSe
 		assert entity != null;
 		assert errors != null;
 
+		//validar que las palabras de texto no sean spam
+		String texto = request.getModel().getString("activities");
+		Boolean esSpam = this.esSpam(texto);
+		errors.state(request, !esSpam, "activities", "administrator.companyRecord.error.text.spam");
+
+	}
+	//metodo para comprobar que las palabras no sean spam
+	private Boolean esSpam(final String descriptor) {
+		Configuration c = this.repository.findConfiguration();
+		Collection<String> spamWords = c.getSpamWords();
+		Double spamThreshold = c.getSpamThreshold();
+		Boolean result;
+
+		String[] palabrasDescriptor = descriptor.split(" ");
+		Double contadorSpam = 0.0;
+		for (String s : palabrasDescriptor) {
+			if (spamWords.contains(s.trim().toLowerCase())) {
+				contadorSpam = contadorSpam + 1;
+			}
+		}
+		Double totalPalabras = (double) palabrasDescriptor.length;
+		Double percentageSpam = contadorSpam / totalPalabras;
+
+		result = percentageSpam >= spamThreshold;
+		return result;
 	}
 
 	@Override
