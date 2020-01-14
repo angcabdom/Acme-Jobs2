@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.configuration.Configuration;
 import acme.entities.investorRecords.InvestorRecord;
 import acme.framework.repositories.AbstractRepository;
 
@@ -21,4 +22,6 @@ public interface AdministratorInvestorRecordRepository extends AbstractRepositor
 	@Query("select i from InvestorRecord i where i.name = ?1")
 	InvestorRecord findOneByName(String name);
 
+	@Query("select c from Configuration c")
+	Configuration findConfiguration();
 }

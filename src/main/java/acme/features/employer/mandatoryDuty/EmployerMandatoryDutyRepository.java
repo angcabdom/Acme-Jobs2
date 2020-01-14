@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.configuration.Configuration;
 import acme.entities.jobs.Job;
 import acme.entities.mandatoryDuties.MandatoryDuty;
 import acme.framework.repositories.AbstractRepository;
@@ -28,4 +29,6 @@ public interface EmployerMandatoryDutyRepository extends AbstractRepository {
 	@Query("select j.reference from Job j where j.id =?1")
 	String findJobReference(int jobId);
 
+	@Query("select c from Configuration c")
+	Configuration findConfiguration();
 }
