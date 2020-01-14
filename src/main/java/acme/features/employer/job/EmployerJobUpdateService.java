@@ -83,8 +83,11 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 
 			Boolean esSpam = this.esSpam(descriptor);
 
-			errors.state(request, !esSpam, "finalMode", "employer.job.error.finalMode.spam");
+			errors.state(request, !esSpam, "descriptor", "error.text.spam");
 		}
+		Boolean esSpam = this.esSpam(descriptor);
+
+		errors.state(request, !esSpam, "descriptor", "error.text.spam");
 
 	}
 

@@ -1,9 +1,12 @@
 
 package acme.features.administrator.investorRecord;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.configuration.Configuration;
 import acme.entities.investorRecords.InvestorRecord;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
@@ -66,14 +69,32 @@ public class AdministratorInvestorRecordCreateService implements AbstractCreateS
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		/*
-		 * it can be used to validate that a deadline is in future,
-		 * that a range is sequential, that a ticker is unique,
-		 * or that an amount of money is positive and its currency is EUR.
-		 */
-		//		boolean isAccepted;
-		//		isAccepted = request.getModel().getBoolean("accept");
-		//		errors.state(request, isAccepted, "accept", "administrator.investor-record.error.must-accept");
+
+		//validar que las palabras de texto no sean spam
+		String texto = request.getModel().getString("statement");
+		Boolean esSpam = this.esSpam(texto);
+		errors.state(request, !esSpam, "statement", "error.text.spam");
+
+	}
+	//metodo para comprobar que las palabras no sean spam
+	private Boolean esSpam(final String descriptor) {
+		Configuration c = this.repository.findConfiguration();
+		Collection<String> spamWords = c.getSpamWords();
+		Double spamThreshold = c.getSpamThreshold();
+		Boolean result;
+
+		String[] palabrasDescriptor = descriptor.split(" ");
+		Double contadorSpam = 0.0;
+		for (String s : palabrasDescriptor) {
+			if (spamWords.contains(s.trim().toLowerCase())) {
+				contadorSpam = contadorSpam + 1;
+			}
+		}
+		Double totalPalabras = (double) palabrasDescriptor.length;
+		Double percentageSpam = contadorSpam / totalPalabras;
+
+		result = percentageSpam >= spamThreshold;
+		return result;
 	}
 
 	@Override

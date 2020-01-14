@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.applications.Application;
+import acme.entities.configuration.Configuration;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -33,4 +34,6 @@ public interface EmployerApplicationRepository extends AbstractRepository {
 	@Query("select a from Application a where a.job.id =?1 order by a.creationMoment DESC")
 	Collection<Application> findManyByJobIdOrderByMoment(int jobId);
 
+	@Query("select c from Configuration c")
+	Configuration findConfiguration();
 }

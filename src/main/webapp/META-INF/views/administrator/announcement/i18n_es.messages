@@ -27,3 +27,5 @@ administrator.announcement.error.must-accept = Debe aceptar
  
 administrator.announcement.form.button.return = Volver
 
+#validar palabras 
+administrator.announcement.error.text.spam = El texto contiene palabras que son spam
