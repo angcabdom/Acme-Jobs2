@@ -15,6 +15,9 @@ employer.application.list.label.reference = Referencia
 employer.application.list.label.deadline = Fecha Limite
 employer.application.list.label.creationMoment = Fecha de creacion
 employer.application.list.label.status = Estado
+employer.application.form.label.status.pending = En Espera
+employer.application.form.label.status.rejected = Rechazada
+employer.application.form.label.status.accepted = Aceptada
 
 employer.application.error.status = El estado debe ser: aceptado o rechazado
 employer.application.error.status2 = No puede modificar si la peticion ya esta aceptado o rechazada
