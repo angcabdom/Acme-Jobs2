@@ -11,6 +11,9 @@ worker.application.form.button.return = Return
 worker.application.list.label.reference = Reference
 worker.application.list.label.deadline = Deadline
 worker.application.list.label.status = Status
+worker.application.form.label.status.pending = Pending
+worker.application.form.label.status.rejected = Rejected
+worker.application.form.label.status.accepted = Accepted
 worker.application.form.label.jobReference = Related Job's reference
 
 worker.application.form.label.workerReference = Worker reference

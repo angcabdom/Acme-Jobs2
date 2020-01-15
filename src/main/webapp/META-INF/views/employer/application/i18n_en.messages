@@ -15,6 +15,9 @@ employer.application.list.label.reference = Reference
 employer.application.list.label.deadline = Deadline
 employer.application.list.label.creationMoment = Creation Moment
 employer.application.list.label.status = Status
+employer.application.form.label.status.pending = Pending
+employer.application.form.label.status.rejected = Rejected
+employer.application.form.label.status.accepted = Accepted
 
 employer.application.error.status = The status must be: accepted or rejected
 employer.application.error.status2 = You can't modify if the application is already accepted or rejected
