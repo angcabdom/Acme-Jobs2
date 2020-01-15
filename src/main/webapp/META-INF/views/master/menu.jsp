@@ -105,8 +105,8 @@
 		<!---------------------------- ADMINISTRATOR ----------------------------------->
 
 
-		<acme:menu-option code="master.menu.administrator.auditor" access="hasRole('Administrator')">
-			<acme:menu-suboption code="master.menu.auditor.list" action="/administrator/auditor/list" />
+		<acme:menu-option code="master.menu.administrator.auditorRequest" access="hasRole('Administrator')">
+			<acme:menu-suboption code="master.menu.auditorRequest.list" action="/administrator/auditor-request/list" />
 		</acme:menu-option>
 
 
@@ -151,7 +151,7 @@
 				access="!hasRole('Worker')" />
 			<acme:menu-suboption code="master.menu.user-account.worker" action="/authenticated/worker/update" access="hasRole('Worker')" />
 
-			<acme:menu-suboption code="master.menu.user-account.become-auditor" action="/authenticated/auditor/create"
+			<acme:menu-suboption code="master.menu.user-account.request-auditor" action="/authenticated/auditor-request/create"
 				access="!hasRole('Auditor')" />
 			<acme:menu-suboption code="master.menu.user-account.auditor" action="/authenticated/auditor/update" access="hasRole('Auditor')" />
 

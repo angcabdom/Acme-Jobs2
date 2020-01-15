@@ -29,9 +29,7 @@ public class AuditorJobListAuditRecordService implements AbstractListService<Aud
 	public boolean authorise(final Request<Job> request) {
 		assert request != null;
 
-		int userId = request.getPrincipal().getActiveRoleId();
-		String accepted = this.repository.findAccepted(userId);
-		return accepted.equals("true");
+		return true;
 	}
 
 	@Override

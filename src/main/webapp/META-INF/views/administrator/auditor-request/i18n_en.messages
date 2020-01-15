@@ -1,0 +1,22 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.auditorRequest.list.label.firm = Firm
+administrator.auditorRequest.list.label.accepted = Accepted
+
+administrator.auditorRequest.form.label.authenticatedUsername = Username
+administrator.auditorRequest.form.label.firm = Firm
+administrator.auditorRequest.form.label.statement = Responsability statement
+administrator.auditorRequest.form.label.accepted = Accepted
+
+administrator.auditorRequest.form.button.update = Update
+administrator.auditorRequest.form.button.return = Return
+
+administrator.auditorRequest.error.accepted = You can not update a request once it has been accepted

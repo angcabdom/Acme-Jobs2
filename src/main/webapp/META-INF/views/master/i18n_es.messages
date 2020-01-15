@@ -97,8 +97,8 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 
-master.menu.administrator.auditor = Lista de Auditores
-master.menu.auditor.list = Lista de Auditores
+master.menu.administrator.auditorRequest = Solicitudes de Auditores
+master.menu.auditorRequest.list = Lista de solicitudes de Auditores
 
 master.menu.configurations = Configuración
 master.menu.configuration.list = Configuraciones
@@ -143,7 +143,7 @@ master.menu.user-account.employer = Datos de empleador
 master.menu.user-account.become-employer = Hazte empleador
 master.menu.user-account.worker = Datos de trabajador
 master.menu.user-account.become-worker = Hazte trabajador
-master.menu.user-account.become-auditor = Hazte auditor
+master.menu.user-account.request-auditor = Solicitar hacerte auditor
 master.menu.user-account.auditor = Datos de auditor 
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor

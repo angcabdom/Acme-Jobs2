@@ -69,7 +69,7 @@ public class AuthenticatedAuditorUpdateService implements AbstractUpdateService<
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "firm", "responsabilityStatement", "accepted");
+		request.unbind(entity, model, "firm", "responsabilityStatement");
 	}
 
 	@Override

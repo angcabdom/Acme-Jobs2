@@ -9,8 +9,11 @@
 # they accept any liabilities with respect to them.
 
 
-authenticated.auditor.form.label.firm = Firm
-authenticated.auditor.form.label.statement = Responsability statement
+authenticated.auditorRequest.form.label.authenticatedUsername = Username
+authenticated.auditorRequest.form.label.firm = Firm
+authenticated.auditorRequest.form.label.statement = Responsability statement
 
-authenticated.auditor.form.button.update = Update
-authenticated.auditor.form.button.return = Return
+authenticated.auditorRequest.form.button.create = Request
+authenticated.auditorRequest.form.button.return = Return
+
+authenticated.auditorRequest.error.alreadyExist = You have already requested to become an auditor

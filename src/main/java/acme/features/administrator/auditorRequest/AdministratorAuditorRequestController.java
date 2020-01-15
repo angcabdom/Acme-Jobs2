@@ -1,5 +1,5 @@
 
-package acme.features.administrator.auditor;
+package acme.features.administrator.auditorRequest;
 
 import javax.annotation.PostConstruct;
 
@@ -7,25 +7,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.roles.Auditor;
+import acme.entities.auditorRequest.AuditorRequest;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/administrator/auditor/")
-public class AdministratorAuditorController extends AbstractController<Administrator, Auditor> {
+@RequestMapping("/administrator/auditor-request/")
+public class AdministratorAuditorRequestController extends AbstractController<Administrator, AuditorRequest> {
 
 	//	Internal state ------------
 
 	@Autowired
-	private AdministratorAuditorListService		listService;
+	private AdministratorAuditorRequestListService		listService;
 
 	@Autowired
-	private AdministratorAuditorShowService		showService;
+	private AdministratorAuditorRequestShowService		showService;
 
 	@Autowired
-	private AdministratorAuditorUpdateService	updateService;
+	private AdministratorAuditorRequestUpdateService	updateService;
 
 
 	//	Constructors -------------

@@ -555,8 +555,7 @@ Worker
 Auditor
 --
 + firm: String {NotBlank}
-+ responsabilityStatement: String {NotBlank}
-+ accepted: Boolean {NotNull}</panel_attributes>
++ responsabilityStatement: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -816,5 +815,38 @@ m1=1
 m2= 0..*
 &lt; is created by</panel_attributes>
     <additional_attributes>10.0;137.0;110.0;10.0;680.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>231</x>
+      <y>392</y>
+      <w>252</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>AuditorRequest
+--
++ firm: String{NotBlank}
++ responsabilityStatement: String{NotBlank}
++ accepted: Boolean {NotNull}
++authenticated: Authenticated{NotNull,Valid,OneToOne}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>357</x>
+      <y>224</y>
+      <w>238</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-x
+m1= 0..1
+m2= 1
+Request v
+</panel_attributes>
+    <additional_attributes>10.0;237.0;10.0;150.0;310.0;150.0;310.0;10.0</additional_attributes>
   </element>
 </diagram>
