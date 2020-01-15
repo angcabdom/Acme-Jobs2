@@ -28,9 +28,7 @@ public class AuditorAuditRecordListMineService implements AbstractListService<Au
 	public boolean authorise(final Request<AuditRecord> request) {
 		assert request != null;
 
-		int userId = request.getPrincipal().getActiveRoleId();
-		String accepted = this.repository.findAccepted(userId);
-		return accepted.equals("true");
+		return true;
 	}
 
 	@Override

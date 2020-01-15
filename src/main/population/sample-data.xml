@@ -549,7 +549,6 @@
 	<bean name="auditor1Employer" class="acme.entities.roles.Auditor">
 		<property name="firm" value="Firm 1" />
 		<property name="responsabilityStatement" value="Express an opinion on the financial statements" />
-		<property name="accepted" value="true"/>
 		<property name="userAccount" ref="auditor1UserAccount" />
 	</bean>
 
@@ -579,7 +578,6 @@
 	<bean name="auditor2Employer" class="acme.entities.roles.Auditor">
 		<property name="firm" value="Firm 2" />
 		<property name="responsabilityStatement" value="Express an opinion on the financial statements" />
-		<property name="accepted" value="false"/>
 		<property name="userAccount" ref="auditor2UserAccount" />
 	</bean>
 
@@ -687,7 +685,15 @@
 		
 	</bean>
 	
-
+	
+	<!-- Message -->
+	
+    <bean name="AuditorRequest1" class="acme.entities.auditorRequest.AuditorRequest">
+		<property name="accepted" value="false" />
+		<property name="firm" value="Empresa" />
+		<property name="responsabilityStatement" value="Responsabilidad"/>
+		<property name="authenticated" ref="employer1Authenticated"/>		
+	</bean>
 
 
 	<!-- /////////////////// FIN ///////////////////////// -->

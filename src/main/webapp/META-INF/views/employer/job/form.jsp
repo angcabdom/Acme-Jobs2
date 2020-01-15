@@ -44,10 +44,10 @@
 	<security:authorize access="hasRole('Employer')">
 	<acme:form-submit test="${command != 'create' && finalMode == false}" code="employer.mandatoryDuty.form.button.create" method = "get" action="/employer/mandatory-duty/create?idj=${id}" />
 	
-	<acme:form-submit test="${command == 'show' }" code="employer.job.form.button.update"
+	<acme:form-submit test="${command == 'show' && isOwner==true }" code="employer.job.form.button.update"
 		action="/employer/job/update" />
 
-	<acme:form-submit test="${command == 'show' }" code="employer.job.form.button.delete"
+	<acme:form-submit test="${command == 'show' && isOwner==true}" code="employer.job.form.button.delete"
 		action="/employer/job/delete" />
 
 	<acme:form-submit test="${command == 'create' }" code="employer.job.form.button.create"

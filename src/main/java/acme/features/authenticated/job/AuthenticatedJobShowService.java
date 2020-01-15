@@ -5,9 +5,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.jobs.Job;
+import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
+import acme.framework.entities.UserAccount;
 import acme.framework.services.AbstractShowService;
 
 @Service
@@ -47,6 +49,10 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		assert entity != null;
 		assert model != null;
 
+		int accountId = request.getPrincipal().getAccountId();
+		UserAccount userAccount = this.repository.findOneUserAccountById(accountId);
+		Boolean isOwner = userAccount.getRole(Employer.class).getId() == entity.getEmployer().getId();
+		model.setAttribute("isOwner", isOwner);
 		request.unbind(entity, model, "reference", "title", "deadline");
 		request.unbind(entity, model, "salary", "moreInfo", "finalMode", "descriptor");
 

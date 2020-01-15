@@ -1,4 +1,4 @@
-# i18n_en.messages
+# i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -9,8 +9,11 @@
 # they accept any liabilities with respect to them.
 
 
-authenticated.auditor.form.label.firm = Firm
-authenticated.auditor.form.label.statement = Responsability statement
+authenticated.auditorRequest.form.label.authenticatedUsername = Nombre de usuario
+authenticated.auditorRequest.form.label.firm = Empresa
+authenticated.auditorRequest.form.label.statement = Hoja de responsabilidad
 
-authenticated.auditor.form.button.update = Update
-authenticated.auditor.form.button.return = Return
+authenticated.auditorRequest.form.button.create = Solicitar
+authenticated.auditorRequest.form.button.return = Volver
+
+authenticated.auditorRequest.error.alreadyExist = Ya has solicitado convertirte en auditor

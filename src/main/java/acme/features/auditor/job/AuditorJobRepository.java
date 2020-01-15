@@ -21,6 +21,4 @@ public interface AuditorJobRepository extends AbstractRepository {
 	@Query("select j from Job j where j not in (select ar.job from AuditRecord ar where ar.auditor.id = ?1) and j.finalMode=true")
 	Collection<Job> findManyWithoutAuditorRecord(int auditorId);
 
-	@Query("select a.accepted from Auditor a where a.id =?1")
-	String findAccepted(int id);
 }
